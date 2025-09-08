@@ -15,7 +15,7 @@ builder.Services.AddDbContext<IdentityContext>(options =>
 
 
 builder.Services.AddScoped<IProductRepository, EfProductRepository>();
-
+builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
 
 
 var app = builder.Build();
