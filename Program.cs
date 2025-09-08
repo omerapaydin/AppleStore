@@ -1,3 +1,4 @@
+using AppleStore.Data.Abstract;
 using AppleStore.Data.Concrete.EfCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<IdentityContext>(options =>
 });
 
 
+builder.Services.AddScoped<IProductRepository, EfProductRepository>();
 
 
 
