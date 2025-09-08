@@ -1,4 +1,4 @@
-@model List<Product>
+@model ProductListViewModel
 
 <div class="row">
 
@@ -25,7 +25,7 @@
     </div>
     <div class="col-md-9">
        <div class="row">
-         @foreach(var prd in Model)
+         @foreach(var prd in Model.Products)
         {
             <div class="col-md-4 mb-3">
                     <div class="card shadow product-card">
@@ -54,9 +54,6 @@
        </div>
     </div>
 </div>
-
-
-
 
 
 @section Search {

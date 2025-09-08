@@ -157,3 +157,6 @@
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.genruntimeconfig.cache
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/ref/AppleStore.dll
 /Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/AppleStore.staticwebassets.runtime.json
+/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.RazorAssemblyInfo.cache
+/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.RazorAssemblyInfo.cs
+/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-nqbze1zwj3.gz
