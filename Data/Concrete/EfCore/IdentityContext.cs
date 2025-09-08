@@ -95,7 +95,7 @@ namespace AppleStore.Data.Concrete.EfCore
                 Image = "airpods-pro-2-hero-select-202409.png",
                 Price = 75000,
                 IsActive = true,
-                UserId = "2",
+                UserId = "1",
                 CategoryId = 1
             },
             new Product
@@ -107,7 +107,7 @@ namespace AppleStore.Data.Concrete.EfCore
                 Image = "airpods-max.jpeg",
                 Price = 75000,
                 IsActive = true,
-                UserId = "2",
+                UserId = "1",
                 CategoryId = 2
             },
             new Product
@@ -119,7 +119,7 @@ namespace AppleStore.Data.Concrete.EfCore
                 Image = "key.jpeg",
                 Price = 75000,
                 IsActive = true,
-                UserId = "2",
+                UserId = "1",
                 CategoryId = 2
             },
             new Product
@@ -131,7 +131,7 @@ namespace AppleStore.Data.Concrete.EfCore
                 Image = "mouse.jpeg",
                 Price = 75000,
                 IsActive = true,
-                UserId = "2",
+                UserId = "1",
                 CategoryId = 3
             }
         );

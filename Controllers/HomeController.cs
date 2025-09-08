@@ -22,20 +22,20 @@ namespace AppleStore.Controllers
         {
             return View();
         }
-        public async Task<IActionResult> List(int? id)
+        public IActionResult List(int? id)
         {
 
-            var products = await _productRepository.Products.ToListAsync();
+            var products =  _productRepository.Products.AsQueryable();
 
             if (id != null)
             {
-                products = products.Where(i => i.CategoryId == id).ToList();
+                products = products.Where(i => i.CategoryId == id);
             }
 
             var viewModel = new ProductListViewModel
             {
-                Products = products,
-                Categories = await _categoryRepository.Categories.ToListAsync()
+                Products = products.ToList(),
+                Categories =  _categoryRepository.Categories.ToList()
             };
              return View(viewModel);
         }
