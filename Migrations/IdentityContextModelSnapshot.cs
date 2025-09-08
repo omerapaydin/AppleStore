@@ -91,17 +91,33 @@ namespace AppleStore.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1ebbcd9b-89e8-4169-8ab0-e6fad8cb76e8",
+                            ConcurrencyStamp = "4e8b69e3-42b2-4214-8e08-b85af94ab7bd",
                             Email = "info@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ömer Apaydın",
                             ImageFile = "p1.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEI3H9/kbGDibp+2eyG8u7+BLK8SIVYhj1CgRba0j1QIYyATCTqcZc6w8AsZABwA4uA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPyigf/zy0GXM6irpuRPtN3uoTyi+UwmNr9yDIDye6XnZj5Oh3aQSaKPQcKBRiIskQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8483bcde-7dce-4e9a-b416-1f04cfee0891",
+                            SecurityStamp = "5613dedf-6602-4b91-adeb-cacf36439518",
                             TwoFactorEnabled = false,
                             UserName = "omerapaydin"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "8e430235-1fde-40e9-95bb-d56bcffe1319",
+                            Email = "info2@gmail.com",
+                            EmailConfirmed = true,
+                            FullName = "Ahmet Tamboğa",
+                            ImageFile = "p2.jpg",
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAIAAYagAAAAEELc16PSgTVGUlfzDPxp/cQGyhSvIeqGJ17DPhOsCev1QljLtfRZufrdq9lNCQiOaQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "3abb53c2-2bfa-4fc0-b144-96cb52d6844b",
+                            TwoFactorEnabled = false,
+                            UserName = "ahmettambuga"
                         });
                 });
 
@@ -236,7 +252,7 @@ namespace AppleStore.Migrations
                             Price = 75000m,
                             PublishedOn = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Apple",
-                            UserId = "1"
+                            UserId = "2"
                         },
                         new
                         {
@@ -248,7 +264,7 @@ namespace AppleStore.Migrations
                             Price = 75000m,
                             PublishedOn = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Apple",
-                            UserId = "1"
+                            UserId = "2"
                         },
                         new
                         {
@@ -260,7 +276,7 @@ namespace AppleStore.Migrations
                             Price = 75000m,
                             PublishedOn = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Apple",
-                            UserId = "1"
+                            UserId = "2"
                         },
                         new
                         {
@@ -272,7 +288,7 @@ namespace AppleStore.Migrations
                             Price = 75000m,
                             PublishedOn = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Apple",
-                            UserId = "1"
+                            UserId = "2"
                         });
                 });
 

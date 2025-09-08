@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppleStore.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20250908224000_DataTable2")]
-    partial class DataTable2
+    [Migration("20250908231211_DataTables")]
+    partial class DataTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,17 +94,33 @@ namespace AppleStore.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "98de0061-c09c-41a8-9ecc-f6ffee89ba4f",
+                            ConcurrencyStamp = "4e8b69e3-42b2-4214-8e08-b85af94ab7bd",
                             Email = "info@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ömer Apaydın",
                             ImageFile = "p1.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEEkpjc/SBi4oupxuIh+9zQ8jluHsz2P2z/Wu1RRNHyrhnX3526dygsnuaJ/d9GRQ9w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPyigf/zy0GXM6irpuRPtN3uoTyi+UwmNr9yDIDye6XnZj5Oh3aQSaKPQcKBRiIskQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "85dbd55c-5f8c-4c10-88a1-14d1c0209e5c",
+                            SecurityStamp = "5613dedf-6602-4b91-adeb-cacf36439518",
                             TwoFactorEnabled = false,
                             UserName = "omerapaydin"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "8e430235-1fde-40e9-95bb-d56bcffe1319",
+                            Email = "info2@gmail.com",
+                            EmailConfirmed = true,
+                            FullName = "Ahmet Tamboğa",
+                            ImageFile = "p2.jpg",
+                            LockoutEnabled = false,
+                            PasswordHash = "AQAAAAIAAYagAAAAEELc16PSgTVGUlfzDPxp/cQGyhSvIeqGJ17DPhOsCev1QljLtfRZufrdq9lNCQiOaQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "3abb53c2-2bfa-4fc0-b144-96cb52d6844b",
+                            TwoFactorEnabled = false,
+                            UserName = "ahmettambuga"
                         });
                 });
 

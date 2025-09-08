@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace AppleStore.Migrations
 {
     /// <inheritdoc />
-    public partial class DataTable1 : Migration
+    public partial class DataTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -226,6 +228,38 @@ namespace AppleStore.Migrations
                         principalTable: "Products",
                         principalColumn: "ProductId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "ImageFile", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[,]
+                {
+                    { "1", 0, "4e8b69e3-42b2-4214-8e08-b85af94ab7bd", "info@gmail.com", true, "Ömer Apaydın", "p1.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEPyigf/zy0GXM6irpuRPtN3uoTyi+UwmNr9yDIDye6XnZj5Oh3aQSaKPQcKBRiIskQ==", null, false, "5613dedf-6602-4b91-adeb-cacf36439518", false, "omerapaydin" },
+                    { "2", 0, "8e430235-1fde-40e9-95bb-d56bcffe1319", "info2@gmail.com", true, "Ahmet Tamboğa", "p2.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEELc16PSgTVGUlfzDPxp/cQGyhSvIeqGJ17DPhOsCev1QljLtfRZufrdq9lNCQiOaQ==", null, false, "3abb53c2-2bfa-4fc0-b144-96cb52d6844b", false, "ahmettambuga" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Categories",
+                columns: new[] { "CategoryId", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Telefonlar" },
+                    { 2, "Bilgisayarlar" },
+                    { 3, "Aksesuarlar" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "ProductId", "CategoryId", "Description", "Image", "IsActive", "Price", "PublishedOn", "Title", "UserId" },
+                values: new object[,]
+                {
+                    { 1, 1, "Apple HomePod Hoparlör", "homepod.jpg", true, 45000m, new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "1" },
+                    { 2, 1, "Apple Şarj Kablosu Magsafe", "magsafe.jpg", true, 55000m, new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "1" },
+                    { 3, 1, "Apple AirPods Pro 2", "airpods-pro-2-hero-select-202409.png", true, 75000m, new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "2" },
+                    { 4, 2, "Apple AirPods Pro 2", "airpods-max.jpeg", true, 75000m, new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "2" },
+                    { 5, 2, "Apple Key Pro 2", "key.jpeg", true, 75000m, new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "2" },
+                    { 6, 3, "Apple Mouse Pro ", "mouse.jpeg", true, 75000m, new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Apple", "2" }
                 });
 
             migrationBuilder.CreateIndex(
