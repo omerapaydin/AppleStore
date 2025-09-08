@@ -156,3 +156,4 @@
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.pdb
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.genruntimeconfig.cache
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/ref/AppleStore.dll
+/Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/AppleStore.staticwebassets.runtime.json
