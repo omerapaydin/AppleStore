@@ -1,2 +1,98 @@
 @model List<Product>
 
+<div class="row">
+
+    <div class="col-md-3 mb-3">
+         <div  class="card shadow-sm border-0 rounded-4 p-3 bg-light">
+            <h5 class="fw-bold text-center mb-3">
+              <a style="text-decoration : none; color : #212529;" href="/Home/List">Kategoriler</a>
+            </h5>
+            <ul class="list-group list-group-flush">
+
+               <!-- @foreach(var ctg in Model.Categories)
+                {
+              <li class="list-group-item bg-transparent border-0">
+                <a
+                  asp-controller="Home" asp-action="List" asp-route-id="@ctg.CategoryId"
+                  class="text-decoration-none text-dark fw-semibold d-block text-center py-2"
+                >
+                  @ctg.Name
+                </a>
+              </li> 
+                } -->
+
+
+            <li class="list-group-item bg-transparent border-0">
+                <a
+                  class="text-decoration-none text-dark fw-semibold d-block text-center py-2" >
+                 Telefonlar
+                </a>
+            </li> 
+            <li class="list-group-item bg-transparent border-0">
+                <a
+                  class="text-decoration-none text-dark fw-semibold d-block text-center py-2" >
+                 Bilgisayarlar
+                </a>
+            </li> 
+            <li class="list-group-item bg-transparent border-0">
+                <a
+                  class="text-decoration-none text-dark fw-semibold d-block text-center py-2" >
+                 Aksesuarlar
+                </a>
+            </li> 
+
+
+
+            </ul>
+          </div>
+    </div>
+    <div class="col-md-9">
+       <div class="row">
+         @foreach(var prd in Model)
+        {
+            <div class="col-md-4 mb-3">
+                    <div class="card shadow product-card">
+                    <a href="/Home/Details/@prd.ProductId">
+                        <img src="~/img/@prd.Image" class="card-img-top" alt="Kulaklık" />
+                        </a>
+                        <div class="card-body">
+                       <a href="/Home/Details/@prd.ProductId" style="text-decoration: none; color: #212529;">
+                        <h5 class="card-title">@prd.Title</h5>
+                      </a>
+
+                        <p class="card-text">
+                            @prd.Description
+                        </p>
+                        <p class="text-warning">₺ @prd.Price</p>
+
+                        <form asp-page="/Cart" method="post">
+                        <input type="hidden" name="ProductId" asp-for="@prd.ProductId">
+                        <button type="submit" class="btn custom-btn">Sepete Ekle</button>
+                      </form>
+
+                        </div>
+                    </div>
+            </div>
+        }
+       </div>
+    </div>
+</div>
+
+
+
+
+
+@section Search {
+        <form asp-controller="Home" asp-action="List" method="post" class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              name="search"
+              placeholder="Ürün ara..."
+              aria-label="Search"
+            />
+            <button class="btn btn-dark" type="submit">Ara</button>
+        </form>
+}
+
+
