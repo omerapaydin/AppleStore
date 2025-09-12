@@ -6,28 +6,31 @@ using AppleStore.Entity;
 using AppleStore.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace AppleStore.Controllers
 {
-    public class AccountController:Controller
+    public class AccountController : Controller
     {
 
-        private readonly UserManager<ApplicationUser> userManager;
-        public AccountController(UserManager<ApplicationUser> userManager)
-         : base()
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+
         {
-            this.userManager = userManager;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
-       
+
         public IActionResult Create()
         {
             return View();
         }
-    
+
         [HttpPost]
-        public async Task<IActionResult> Create(CreateViewModel model,IFormFile? imageFile)
+        public async Task<IActionResult> Create(CreateViewModel model, IFormFile? imageFile)
         {
-              var extension = "";
+            var extension = "";
 
             if (imageFile != null)
             {
@@ -43,7 +46,7 @@ namespace AppleStore.Controllers
             else
             {
                 ModelState.AddModelError("", "Lütfen bir resim dosyası seçiniz");
-                return View(model); 
+                return View(model);
             }
 
             if (ModelState.IsValid)
@@ -66,12 +69,50 @@ namespace AppleStore.Controllers
                 var hasher = new PasswordHasher<ApplicationUser>();
                 user.PasswordHash = hasher.HashPassword(user, model.Password!);
 
-                await userManager.CreateAsync(user);
-                return RedirectToAction("Index", "Home");
+                await _userManager.CreateAsync(user);
+                return RedirectToAction("Login", "Account");
 
             }
 
             return View(model);
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email!);
+                if (user != null)
+                {
+                    await _signInManager.SignOutAsync();
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password!, model.RememberMe, false);
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Geçersiz email veya parola");
+                    }
+                    
+                    
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Kullanıcı bulunamadı");
+                }
+                return View(model);
+            }
+            return View(model);
+        }
+
+            
+  
     }
 }
