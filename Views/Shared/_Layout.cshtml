@@ -40,14 +40,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto me-3">
-                <li class="nav-item">
-                    <a class="nav-link" href="/Home/Index">Ana Sayfa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Home/List">Ürünler</a>
-                </li>
+
+
+
+         @if(User.Identity?.IsAuthenticated)
+            {
                  <li class="nav-item">
-                      <a class="nav-link" href="/Home/Profile">Merhaba Omer</a>
+                      <a class="nav-link" href="/Home/Profile">Merhaba @User.Identity.Name</a>
                  </li>
                   <li class="nav-item">
                      <a class="nav-link" href="/Cart">
@@ -57,12 +56,19 @@
                       <a class="nav-link" href="/Account/Logout">Çıkış Yap</a>
                   </li>
 
+            }else{
                   <li class="nav-item">
                     <a class="nav-link" href="/Account/Create">Üye Ol</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/Account/Login">Giriş Yap</a>
                   </li>
+            }
+
+
+
+              
+                
 
           </ul>
             @RenderSection("Search", required: false) 
