@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/Details.css",
+      "PackagePath": "staticwebassets/css/Details.css"
+    },
+    {
+      "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/Login.css",
+      "PackagePath": "staticwebassets/css/Login.css"
+    },
+    {
       "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
       "PackagePath": "staticwebassets/css/main.css"
     },
