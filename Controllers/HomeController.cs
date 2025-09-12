@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AppleStore.Controllers
 {
-    public class HomeController:Controller
+    public class HomeController : Controller
     {
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
@@ -25,7 +25,7 @@ namespace AppleStore.Controllers
         public IActionResult List(int? id)
         {
 
-            var products =  _productRepository.Products.AsQueryable();
+            var products = _productRepository.Products.AsQueryable();
 
             if (id != null)
             {
@@ -35,9 +35,19 @@ namespace AppleStore.Controllers
             var viewModel = new ProductListViewModel
             {
                 Products = products.ToList(),
-                Categories =  _categoryRepository.Categories.ToList()
+                Categories = _categoryRepository.Categories.ToList()
             };
-             return View(viewModel);
+            return View(viewModel);
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+          
+            var product =await _productRepository.Products
+                .FirstOrDefaultAsync(i => i.ProductId == id);
+           
+            return View(product);
+        }
+
     }
 }
