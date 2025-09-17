@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Details.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2kogf84yb9"},{"Name":"integrity","Value":"sha256-Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY="},{"Name":"label","Value":"_content/AppleStore/css/Details.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 20:14:53 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Sep 2025 22:42:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/css/Details.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Details.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 20:14:53 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ui\u002BhF0JPgtdFUZ30GBc5rZB0jpc4tCstXx\u002BSPK4DYzY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Sep 2025 22:42:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/css/Login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))</AssetFile>
