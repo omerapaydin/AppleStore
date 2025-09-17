@@ -1,10 +1,21 @@
 using AppleStore.Data.Abstract;
 using AppleStore.Data.Concrete.EfCore;
 using AppleStore.Entity;
+using AppleStore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IEmailSender,SmtpEmailSender>(i=>
+    new SmtpEmailSender(
+        builder.Configuration["EmailSender:Host"],
+        builder.Configuration.GetValue<int>("EmailSender:Port"),
+        builder.Configuration.GetValue<bool>("EmailSender:EnableSSL"),
+        builder.Configuration["EmailSender:Username"],
+        builder.Configuration["EmailSender:Password"]
+    )
+);
 
 builder.Services.Configure<IdentityOptions>(options=>{
     options.Password.RequireLowercase = false;
