@@ -18,16 +18,17 @@ namespace AppleStore.Data.Concrete.EfCore
         }
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<Category> Categories => Set<Category>();
-        public DbSet<Product> Products => Set<Product>();   
+        public DbSet<Product> Products => Set<Product>();  
+        public DbSet<Order> Orders => Set<Order>(); 
         
 
 
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
+        {
+            base.OnConfiguring(optionsBuilder);
 
-        optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
-    }
+            optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+        }
 
              
 

@@ -1,4 +1,5 @@
 using AppleStore.Data.Abstract;
+using AppleStore.Data.Concrete;
 using AppleStore.Data.Concrete.EfCore;
 using AppleStore.Entity;
 using AppleStore.Models;
@@ -46,7 +47,7 @@ builder.Services.AddDbContext<IdentityContext>(options =>
 
 builder.Services.AddScoped<IProductRepository, EfProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
-
+builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
 
 
 builder.Services.AddHttpContextAccessor();
