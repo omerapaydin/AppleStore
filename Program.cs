@@ -32,6 +32,8 @@ builder.Services.ConfigureApplicationCookie(options =>{
 
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
 
 builder.Services.AddDbContext<IdentityContext>(options =>
 {
@@ -56,5 +58,8 @@ app.UseHttpsRedirection();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapRazorPages();
+
 
 app.Run();
