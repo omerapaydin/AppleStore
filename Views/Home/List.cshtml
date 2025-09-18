@@ -42,10 +42,19 @@
                         </p>
                         <p class="text-warning">₺ @prd.Price</p>
 
-                        <form asp-page="/Cart" method="post">
-                            <input type="hidden" name="ProductId" asp-for="@prd.ProductId">
-                            <button type="submit" class="btn custom-btn d-block mx-auto w-100">Sepete Ekle</button>
-                        </form>
+                         @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <form asp-page="/Cart" method="post">
+                                <input type="hidden" name="ProductId" value="@prd.ProductId" />
+                                <button type="submit" class="btn custom-btn d-block mx-auto w-100">Sepete Ekle</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <a href="/Account/Login" class="btn custom-btn d-block mx-auto w-100">
+                                Sepete Ekle
+                            </a>
+                        }
 
                         </div>
                     </div>

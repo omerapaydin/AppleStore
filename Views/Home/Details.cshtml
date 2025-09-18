@@ -13,7 +13,20 @@
             <p class="text-muted">@Model.Description</p>
             <h4 class="text-warning">₺ @Model.Price</h4>
             <div class="d-flex gap-2 mt-3">
-              <button class="btn custom-btn">Sepete Ekle</button>
+
+                      @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <form asp-page="/Cart" method="post">
+                                <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                                <button type="submit" class="btn custom-btn d-block mx-auto w-100">Sepete Ekle</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <a href="/Account/Login" class="btn custom-btn d-block mx-auto w-100">
+                                Sepete Ekle
+                            </a>
+                        }
               <button class="btn btn-outline-dark">Favorilere Ekle</button>
             </div>
         </div>
