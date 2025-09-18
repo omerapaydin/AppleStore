@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+885072cea23f1d25c8c1a8c73906a096082948cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fdb344a1e647ffa503b65c99a1a4fef514fe80a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppleStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
