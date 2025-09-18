@@ -80,7 +80,7 @@ namespace AppleStore.Controllers
                     var url = Url.Action("ConfirmEmail", "Account", new{user.Id,token});
 
                     
-                    await _emailSender.SendEmailAsync(user.Email, "Hesap Onayı",$"Lütfen email hesabınızı onaylamak için linke <a href='http://localhost:5271{url}'> tıklayınız. <a/>");
+                    await _emailSender.SendEmailAsync(user.Email!, "Hesap Onayı",$"Lütfen email hesabınızı onaylamak için linke <a href='http://localhost:5271{url}'> tıklayınız. <a/>");
 
 
                     TempData["message"] = "Email hesabınızdaki onay mailine tıkla.";
