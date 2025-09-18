@@ -54,6 +54,39 @@
        </div>
     </div>
 </div>
+<nav>
+  <ul class="pagination justify-content-center">
+    @if (Model.PageInfo.CurrentPage > 1)
+    {
+      <li class="page-item">
+        <a class="page-link custom-page-btn" 
+           href="@Url.Action("List", new { page = Model.PageInfo.CurrentPage - 1, search = ViewBag.Search, id = ViewBag.CategoryId })">
+          &laquo; Önceki
+        </a>
+      </li>
+    }
+
+    @for (var i = 1; i <= Model.PageInfo.TotalPages; i++)
+    {
+      <li class="page-item @(i == Model.PageInfo.CurrentPage ? "active" : "")">
+        <a class="page-link custom-page-btn @(i == Model.PageInfo.CurrentPage ? "active-page" : "")"
+           href="@Url.Action("List", new { page = i, search = ViewBag.Search, id = ViewBag.CategoryId })">
+          @i
+        </a>
+      </li>
+    }
+
+    @if (Model.PageInfo.CurrentPage < Model.PageInfo.TotalPages)
+    {
+      <li class="page-item">
+        <a class="page-link custom-page-btn" 
+           href="@Url.Action("List", new { page = Model.PageInfo.CurrentPage + 1, search = ViewBag.Search, id = ViewBag.CategoryId })">
+          Sonraki &raquo;
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
 
 
 
