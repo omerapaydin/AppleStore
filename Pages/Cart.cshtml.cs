@@ -14,6 +14,7 @@ namespace AppleStore.Pages
     public class CartPageModel : PageModel
     {
         private readonly IProductRepository _productRepository;
+        
 
         public CartPageModel(IProductRepository productRepository)
         {

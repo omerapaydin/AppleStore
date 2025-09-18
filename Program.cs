@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
+
 builder.Services.AddScoped<IEmailSender,SmtpEmailSender>(i=>
     new SmtpEmailSender(
         builder.Configuration["EmailSender:Host"],
@@ -43,7 +46,13 @@ builder.Services.AddDbContext<IdentityContext>(options =>
 
 builder.Services.AddScoped<IProductRepository, EfProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
-builder.Services.AddScoped<Cart>();
+
+
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddDistributedMemoryCache();
+
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 
@@ -51,8 +60,8 @@ builder.Services.AddSession();
 builder.Services.AddIdentity<ApplicationUser,IdentityRole>().AddEntityFrameworkStores<IdentityContext>().AddDefaultTokenProviders();
 
 var app = builder.Build();
-app.UseSession();
 app.UseStaticFiles();
+app.UseSession();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

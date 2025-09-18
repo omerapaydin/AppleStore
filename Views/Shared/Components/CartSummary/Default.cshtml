@@ -1,0 +1,11 @@
+@model AppleStore.Models.Cart
+
+<a class="nav-link position-relative" asp-page="/Cart">
+    <i class="bi bi-cart3 fs-4"></i>
+    @if (Model != null && Model.Items?.Any() == true)
+    {
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            @Model.Items.Count
+        </span>
+    }
+</a>
