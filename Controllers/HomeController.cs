@@ -11,7 +11,7 @@ namespace AppleStore.Controllers
 {
     public class HomeController : Controller
     {
-        public int pageSize = 3;
+        public int pageSize = 8;
 
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
