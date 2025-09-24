@@ -66,7 +66,7 @@ namespace AppleStore.Controllers
                     _orderRepository.AddOrder(order);
                     cart.Clear();
                     HttpContext.Session.SetJson("cart", cart);
-                    return RedirectToAction("/Completed", new { orderId = order.Id });
+                    return RedirectToAction("Completed", new { orderId = order.Id });
                 }
                 model.Cart = cart;
                 return View(model);
