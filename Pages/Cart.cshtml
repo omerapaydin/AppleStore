@@ -54,5 +54,12 @@ else
 
 <div>
     <a class="btn custom-btn me-2" href="/Home/List">Alışverişe Devam Et</a>  
-     <a asp-controller="Order" asp-action="Checkout" class="btn custom-btn">Siparişi Tamamla</a>
+ @if (Model.Carts != null && Model.Carts.Items.Any())
+{
+    <a asp-controller="Order" asp-action="Checkout" class="btn custom-btn">Siparişi Tamamla</a>
+}
+else
+{
+    <button class="btn custom-btn" disabled>Sipariş Sepeti Boş</button>
+}
 </div>
