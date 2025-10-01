@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/Login.css"
     },
     {
+      "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/anasayfa.css",
+      "PackagePath": "staticwebassets/css/anasayfa.css"
+    },
+    {
       "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
       "PackagePath": "staticwebassets/css/main.css"
     },
@@ -33,6 +37,10 @@
       "PackagePath": "staticwebassets/img/airpods-pro-2-hero-select-202409.png"
     },
     {
+      "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/apple.jpg",
+      "PackagePath": "staticwebassets/img/apple.jpg"
+    },
+    {
       "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/applek.png",
       "PackagePath": "staticwebassets/img/applek.png"
     },
@@ -43,6 +51,10 @@
     {
       "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/appletab.jpeg",
       "PackagePath": "staticwebassets/img/appletab.jpeg"
+    },
+    {
+      "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/assd.jpg",
+      "PackagePath": "staticwebassets/img/assd.jpg"
     },
     {
       "Id": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/battery_charger__f8vsiut6h1aq_large_2x.jpg",
