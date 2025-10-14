@@ -33,11 +33,15 @@ namespace AppleStore.Controllers
             {
                 products = products.Where(i => i.CategoryId == id);
             }
-           if(!String.IsNullOrEmpty(search))
+         
+          if (!string.IsNullOrEmpty(search))
             {
-                products = products.Where(p=>p.Description!.ToLower().Contains(search.ToLower()));
-            }
-
+                search = search.ToLower();
+                products = products.Where(p =>
+                    p.Title!.ToLower().Contains(search) ||
+                    (p.Description ?? "").ToLower().Contains(search)
+                );
+    }
             var viewModel = new ProductListViewModel
             {
                 Products = products.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
