@@ -86,3 +86,19 @@
   color: #ffffff !important;
   border: 1px solid #212529 !important;
 }
+/* ------ */
+.favorite-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.checked {
+  color: rgba(255, 165, 0, 0.4);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.favorite-icon:hover .checked {
+  color: orange;
+}

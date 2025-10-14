@@ -30,7 +30,10 @@
             <div class="col-md-3 mb-3">
                     <div class="card shadow product-card">
                     <a href="/Home/Details/@prd.ProductId">
-                        <img src="~/img/@prd.Image" class="card-img-top" alt="Kulaklık" />
+                    <a href="#" class="favorite-icon">
+                    <span class="fa fa-star checked"></span>
+                  </a>
+                                          <img src="~/img/@prd.Image" class="card-img-top" alt="Kulaklık" />
                         </a>
                         <div class="card-body">
                        <a href="/Home/Details/@prd.ProductId" style="text-decoration: none; color: #212529;">
@@ -47,6 +50,7 @@
                             <form asp-page="/Cart" method="post">
                                 <input type="hidden" name="ProductId" value="@prd.ProductId" />
                                 <button type="submit" class="btn custom-btn d-block mx-auto w-100">Sepete Ekle</button>
+                              
                             </form>
                         }
                         else

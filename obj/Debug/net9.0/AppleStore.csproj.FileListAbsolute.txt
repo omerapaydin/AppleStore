@@ -161,7 +161,7 @@
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/AppleStore.RazorAssemblyInfo.cs
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/z8n0pij2r8-2kogf84yb9.gz
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/yeop7mtx7i-zaeh6iegos.gz
-/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-y1hztyjulq.gz
 /Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/Iyzipay.dll
 /Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/nnl36ahebo-uvl0dgyfhw.gz
+/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h1ivw78omx.gz
