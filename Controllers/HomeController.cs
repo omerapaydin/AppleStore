@@ -24,7 +24,7 @@ namespace AppleStore.Controllers
         {
             return View();
         }
-        public IActionResult List(int? id,int page = 1)
+        public IActionResult List(string search,int? id,int page = 1)
         {
 
             var products = _productRepository.Products.AsQueryable();
@@ -32,6 +32,10 @@ namespace AppleStore.Controllers
             if (id != null)
             {
                 products = products.Where(i => i.CategoryId == id);
+            }
+           if(!String.IsNullOrEmpty(search))
+            {
+                products = products.Where(p=>p.Description!.ToLower().Contains(search.ToLower()));
             }
 
             var viewModel = new ProductListViewModel
