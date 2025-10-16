@@ -20,9 +20,11 @@ namespace AppleStore.Data.Concrete
 
         public void AddOrder(Order order)
         {
-           _context.Orders.Add(order);
+            _context.Orders.Add(order);
             _context.SaveChanges();
-        
+
         }
+        
+        
     }
 }

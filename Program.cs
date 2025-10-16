@@ -50,6 +50,7 @@ builder.Services.AddDbContext<IdentityContext>(options =>
 builder.Services.AddScoped<IProductRepository, EfProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
 builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
+builder.Services.AddScoped<IFavoriteRepository, EfFavoriteRepository>();
 builder.Services.AddScoped<Cart>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();

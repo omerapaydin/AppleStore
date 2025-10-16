@@ -18,8 +18,10 @@ namespace AppleStore.Data.Concrete.EfCore
         }
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<Category> Categories => Set<Category>();
-        public DbSet<Product> Products => Set<Product>();  
+        public DbSet<Product> Products => Set<Product>();
         public DbSet<Order> Orders => Set<Order>(); 
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<FavoriteItem> FavoriteItems { get; set; }
         
 
 

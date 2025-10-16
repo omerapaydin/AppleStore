@@ -30,9 +30,17 @@
             <div class="col-md-3 mb-3">
                     <div class="card shadow product-card">
                     <a href="/Home/Details/@prd.ProductId">
-                    <a href="#" class="favorite-icon">
-                    <span class="fa fa-star checked"></span>
-                  </a>
+
+                    <form asp-controller="Favorite" asp-action="Add" method="post" >
+                      <input type="hidden" name="productId" value="@prd.ProductId" />
+                      <button type="submit" class="favorite-icon">
+                          <i class="fa fa-star"></i>
+                      </button>
+
+                  </form>
+
+
+                   
                                           <img src="~/img/@prd.Image" class="card-img-top" alt="Kulaklık" />
                         </a>
                         <div class="card-body">
