@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zaeh6iegos"},{"Name":"integrity","Value":"sha256-VW9bozj96w\u002BLQAASgfipk4Pr1sDnBdY5\u002BkIaGTF61vU="},{"Name":"label","Value":"_content/AppleStore/css/Login.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"891"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VW9bozj96w\u002BLQAASgfipk4Pr1sDnBdY5\u002BkIaGTF61vU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 21:36:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/css/main.8skf4p1fq0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8skf4p1fq0"},{"Name":"integrity","Value":"sha256-\u002BG6a7lhN12ByE2XSC3wIgsKd/lC5oWTsnhwPC0OCzhw="},{"Name":"label","Value":"_content/AppleStore/css/main.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1865"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BG6a7lhN12ByE2XSC3wIgsKd/lC5oWTsnhwPC0OCzhw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Oct 2025 21:52:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/css/main.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-63ZStP9pCd3eZ\u002BdE2CMo25Uuaff4wVdWsfIgHec0JI8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1982"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002263ZStP9pCd3eZ\u002BdE2CMo25Uuaff4wVdWsfIgHec0JI8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Oct 2025 21:52:22 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AppleStore/css/main.h1ivw78omx.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h1ivw78omx"},{"Name":"integrity","Value":"sha256-63ZStP9pCd3eZ\u002BdE2CMo25Uuaff4wVdWsfIgHec0JI8="},{"Name":"label","Value":"_content/AppleStore/css/main.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1982"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u002263ZStP9pCd3eZ\u002BdE2CMo25Uuaff4wVdWsfIgHec0JI8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Oct 2025 21:52:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002BG6a7lhN12ByE2XSC3wIgsKd/lC5oWTsnhwPC0OCzhw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1865"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022\u002BG6a7lhN12ByE2XSC3wIgsKd/lC5oWTsnhwPC0OCzhw=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Oct 2025 21:52:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/img/297629f8-5ac7-41c3-af25-e92ec686a74e.b7dfskoipr.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\297629f8-5ac7-41c3-af25-e92ec686a74e.jpg'))</AssetFile>
