@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AppleStore.Data.Abstract;
 using AppleStore.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppleStore.Data.Concrete.EfCore
 {
@@ -15,18 +16,37 @@ namespace AppleStore.Data.Concrete.EfCore
         {
             _context = context;
         }
-        public IQueryable<Favorite> Favorites =>  _context.Favorites;
+         public IQueryable<Favorite> Favorites =>
+            _context.Favorites
+                .Include(f => f.FavoriteItems)
+                .ThenInclude(fi => fi.Product);
 
         public void AddOrder(Favorite favorite)
         {
             _context.Favorites.Add(favorite);
             _context.SaveChanges();
         }
-        
-         public void DeleteFavorite(Favorite favorite)
+
+        public void DeleteFavorite(Favorite favorite)
         {
             _context.Favorites.Remove(favorite);
             _context.SaveChanges();
+        }
+        
+         public Favorite? GetFavoriteById(int id)
+        {
+            return _context.Favorites
+                .Include(f => f.FavoriteItems)
+                .ThenInclude(fi => fi.Product)
+                .FirstOrDefault(f => f.FavoriteId == id);
+        }
+
+        public Favorite? GetFavoriteByUserId(string userId)
+        {
+            return _context.Favorites
+                .Include(f => f.FavoriteItems)
+                .ThenInclude(fi => fi.Product)
+                .FirstOrDefault(f => f.UserId == userId);
         }
     }
 }

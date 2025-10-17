@@ -12,6 +12,8 @@ namespace AppleStore.Data.Abstract
         IQueryable<Favorite>  Favorites { get; }
 
         void AddOrder(Favorite favorite);
-         void DeleteFavorite(Favorite favorite);
+        void DeleteFavorite(Favorite favorite);
+            Favorite? GetFavoriteById(int id);
+        Favorite? GetFavoriteByUserId(string userId);
     }
 }
