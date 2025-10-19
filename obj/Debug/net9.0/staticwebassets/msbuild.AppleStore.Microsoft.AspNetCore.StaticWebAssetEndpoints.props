@@ -84,6 +84,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aaOzSPVofV7cGlRvJwMLZUxCzdjdLeuWb7EEANsDvjI="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"721442"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aaOzSPVofV7cGlRvJwMLZUxCzdjdLeuWb7EEANsDvjI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 Sep 2025 21:59:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\96441bf3-8297-4b1c-b5d6-4636c309be61.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:53:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/96441bf3-8297-4b1c-b5d6-4636c309be61.ubtrfof2om.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\96441bf3-8297-4b1c-b5d6-4636c309be61.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ubtrfof2om"},{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="},{"Name":"label","Value":"_content/AppleStore/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:53:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/img/airpods-max.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\airpods-max.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -168,6 +180,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HDkhwBktHLzWp6Uw\u002BlQyyHJfstRHuRtpHnNLob3s2Xk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"273571"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022HDkhwBktHLzWp6Uw\u002BlQyyHJfstRHuRtpHnNLob3s2Xk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 01 Oct 2025 21:39:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:52:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.ubtrfof2om.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ubtrfof2om"},{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="},{"Name":"label","Value":"_content/AppleStore/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:52:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/img/battery_charger__f8vsiut6h1aq_large_2x.bv9s2x8qdk.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\battery_charger__f8vsiut6h1aq_large_2x.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -179,6 +203,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-94Z\u002B5h1Pm7lolhqU6pLHIZqriMFGU5pxC45fNsYZktc="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11262"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002294Z\u002B5h1Pm7lolhqU6pLHIZqriMFGU5pxC45fNsYZktc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 08 Sep 2025 21:59:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\e91ef407-4a59-4792-95ed-92c91eab74e3.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:52:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AppleStore/img/e91ef407-4a59-4792-95ed-92c91eab74e3.ubtrfof2om.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\e91ef407-4a59-4792-95ed-92c91eab74e3.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ubtrfof2om"},{"Name":"integrity","Value":"sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="},{"Name":"label","Value":"_content/AppleStore/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1097570"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 19 Oct 2025 21:52:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AppleStore/img/f509e61a-785f-4aba-94dc-4ee308c09928.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\f509e61a-785f-4aba-94dc-4ee308c09928.png'))</AssetFile>

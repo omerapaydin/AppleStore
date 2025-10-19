@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FQxv3UubMeLijYroB2xY2E5eaeU8b+FDXQeeptSMFoE=",
+  "Hash": "HZSOPdX2VS6NegT1lDNIQ9QqTFxOrIDQWBcikrcGnF4=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -248,6 +248,27 @@
       "OriginalItemSpec": "wwwroot/img/7fdc087d-a7f1-4834-bb90-f4487759ca3c.jpg"
     },
     {
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/96441bf3-8297-4b1c-b5d6-4636c309be61#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubtrfof2om",
+      "Integrity": "OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png"
+    },
+    {
       "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/airpods-max.jpeg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
@@ -395,6 +416,27 @@
       "OriginalItemSpec": "wwwroot/img/assd.jpg"
     },
     {
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubtrfof2om",
+      "Integrity": "OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png"
+    },
+    {
       "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/battery_charger__f8vsiut6h1aq_large_2x.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
@@ -414,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/battery_charger__f8vsiut6h1aq_large_2x.jpg"
+    },
+    {
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/e91ef407-4a59-4792-95ed-92c91eab74e3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubtrfof2om",
+      "Integrity": "OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png"
     },
     {
       "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/f509e61a-785f-4aba-94dc-4ee308c09928.png",
@@ -2045,6 +2108,88 @@
       ]
     },
     {
+      "Route": "img/96441bf3-8297-4b1c-b5d6-4636c309be61.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:53:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/96441bf3-8297-4b1c-b5d6-4636c309be61.ubtrfof2om.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/96441bf3-8297-4b1c-b5d6-4636c309be61.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:53:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubtrfof2om"
+        },
+        {
+          "Name": "label",
+          "Value": "img/96441bf3-8297-4b1c-b5d6-4636c309be61.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
       "Route": "img/airpods-max.jpeg",
       "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/airpods-max.jpeg",
       "Selectors": [],
@@ -2619,6 +2764,88 @@
       ]
     },
     {
+      "Route": "img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:52:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.ubtrfof2om.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:52:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubtrfof2om"
+        },
+        {
+          "Name": "label",
+          "Value": "img/b8a9cb90-5bf2-42aa-b192-a5e6b1a63fa8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
       "Route": "img/battery_charger__f8vsiut6h1aq_large_2x.bv9s2x8qdk.jpg",
       "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/battery_charger__f8vsiut6h1aq_large_2x.jpg",
       "Selectors": [],
@@ -2697,6 +2924,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-94Z+5h1Pm7lolhqU6pLHIZqriMFGU5pxC45fNsYZktc="
+        }
+      ]
+    },
+    {
+      "Route": "img/e91ef407-4a59-4792-95ed-92c91eab74e3.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/e91ef407-4a59-4792-95ed-92c91eab74e3.ubtrfof2om.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/e91ef407-4a59-4792-95ed-92c91eab74e3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 19 Oct 2025 21:52:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubtrfof2om"
+        },
+        {
+          "Name": "label",
+          "Value": "img/e91ef407-4a59-4792-95ed-92c91eab74e3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
         }
       ]
     },
