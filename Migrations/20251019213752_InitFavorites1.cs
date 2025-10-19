@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AppleStore.Migrations
 {
     /// <inheritdoc />
-    public partial class DataTables : Migration
+    public partial class InitFavorites1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -65,6 +65,24 @@ namespace AppleStore.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Categories", x => x.CategoryId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Orders",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    OrderDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    City = table.Column<string>(type: "TEXT", nullable: false),
+                    Phone = table.Column<string>(type: "TEXT", nullable: false),
+                    Email = table.Column<string>(type: "TEXT", nullable: false),
+                    AddressLine = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orders", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -174,6 +192,26 @@ namespace AppleStore.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Favorites",
+                columns: table => new
+                {
+                    FavoriteId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PublishedOn = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    UserId = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Favorites", x => x.FavoriteId);
+                    table.ForeignKey(
+                        name: "FK_Favorites_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -230,13 +268,68 @@ namespace AppleStore.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "FavoriteItems",
+                columns: table => new
+                {
+                    FavoriteItemId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false),
+                    FavoriteId = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FavoriteItems", x => x.FavoriteItemId);
+                    table.ForeignKey(
+                        name: "FK_FavoriteItems_Favorites_FavoriteId",
+                        column: x => x.FavoriteId,
+                        principalTable: "Favorites",
+                        principalColumn: "FavoriteId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_FavoriteItems_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderItem",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    OrderId = table.Column<int>(type: "INTEGER", nullable: false),
+                    PostId = table.Column<int>(type: "INTEGER", nullable: false),
+                    ProductId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Price = table.Column<double>(type: "REAL", nullable: false),
+                    Quantity = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderItem", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderItem_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderItem_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FullName", "ImageFile", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1", 0, "4e8b69e3-42b2-4214-8e08-b85af94ab7bd", "info@gmail.com", true, "Ömer Apaydın", "p1.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEPyigf/zy0GXM6irpuRPtN3uoTyi+UwmNr9yDIDye6XnZj5Oh3aQSaKPQcKBRiIskQ==", null, false, "5613dedf-6602-4b91-adeb-cacf36439518", false, "omerapaydin" },
-                    { "2", 0, "8e430235-1fde-40e9-95bb-d56bcffe1319", "info2@gmail.com", true, "Ahmet Tamboğa", "p2.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEELc16PSgTVGUlfzDPxp/cQGyhSvIeqGJ17DPhOsCev1QljLtfRZufrdq9lNCQiOaQ==", null, false, "3abb53c2-2bfa-4fc0-b144-96cb52d6844b", false, "ahmettambuga" }
+                    { "1", 0, "7602f40b-fc4a-4172-a68c-917545a84287", "info@gmail.com", true, "Ömer Apaydın", "p1.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEAkBE4+6BmUrFxUsW7gBr62B6fLyD+hf3b1ai6ogYRDwTmv79HPgW9HdTh+queU/yQ==", null, false, "2d3b3b3a-25fb-4376-b6c5-224ced66a337", false, "omerapaydin" },
+                    { "2", 0, "f3a8c9e7-6d88-49c6-a2dd-a469a7148628", "info2@gmail.com", true, "Ahmet Tamboğa", "p2.jpg", false, null, null, null, "AQAAAAIAAYagAAAAEOLDe28j8YreOSZ+pGgmqYilEhS7o8GfL6FFD++YDVggDGiIL5YqPns4zVjreflNug==", null, false, "15687614-2578-4de8-ab34-63daa43b2e0f", false, "ahmettambuga" }
                 });
 
             migrationBuilder.InsertData(
@@ -310,6 +403,31 @@ namespace AppleStore.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_FavoriteItems_FavoriteId",
+                table: "FavoriteItems",
+                column: "FavoriteId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_FavoriteItems_ProductId",
+                table: "FavoriteItems",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Favorites_UserId",
+                table: "Favorites",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItem_OrderId",
+                table: "OrderItem",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderItem_ProductId",
+                table: "OrderItem",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_CategoryId",
                 table: "Products",
                 column: "CategoryId");
@@ -342,7 +460,19 @@ namespace AppleStore.Migrations
                 name: "Comments");
 
             migrationBuilder.DropTable(
+                name: "FavoriteItems");
+
+            migrationBuilder.DropTable(
+                name: "OrderItem");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "Favorites");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
 
             migrationBuilder.DropTable(
                 name: "Products");

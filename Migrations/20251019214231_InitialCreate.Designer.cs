@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppleStore.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20250908231211_DataTables")]
-    partial class DataTables
+    [Migration("20251019214231_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,15 +94,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4e8b69e3-42b2-4214-8e08-b85af94ab7bd",
+                            ConcurrencyStamp = "7df7e3a4-edb1-46e1-8ea4-cab8fe032456",
                             Email = "info@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ömer Apaydın",
                             ImageFile = "p1.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEPyigf/zy0GXM6irpuRPtN3uoTyi+UwmNr9yDIDye6XnZj5Oh3aQSaKPQcKBRiIskQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECgDJKgaW187QeIctozdPNlrx+3IKTFTWRiBhSPFJvIH7IFq5p+RK/AVGcGxqXizWg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5613dedf-6602-4b91-adeb-cacf36439518",
+                            SecurityStamp = "8774d38d-9bec-46ff-b44a-c7ac9c3c097f",
                             TwoFactorEnabled = false,
                             UserName = "omerapaydin"
                         },
@@ -110,15 +110,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8e430235-1fde-40e9-95bb-d56bcffe1319",
+                            ConcurrencyStamp = "d60e295d-f42e-4474-a75b-13697b293e58",
                             Email = "info2@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ahmet Tamboğa",
                             ImageFile = "p2.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEELc16PSgTVGUlfzDPxp/cQGyhSvIeqGJ17DPhOsCev1QljLtfRZufrdq9lNCQiOaQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDHYZN5metFtPlzunUBEzaJmnvf/AYVVb+DbiBBkr36H9j+g8/2F67ZUmnVTU0xbnQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "3abb53c2-2bfa-4fc0-b144-96cb52d6844b",
+                            SecurityStamp = "aaac3fdf-15a8-4f3f-8e33-54ecc4534b46",
                             TwoFactorEnabled = false,
                             UserName = "ahmettambuga"
                         });
@@ -180,6 +180,111 @@ namespace AppleStore.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.Property<int>("FavoriteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("PublishedOn")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("FavoriteId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Favorites");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.FavoriteItem", b =>
+                {
+                    b.Property<int>("FavoriteItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FavoriteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FavoriteItemId");
+
+                    b.HasIndex("FavoriteId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("FavoriteItems");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AddressLine")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("REAL");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("AppleStore.Entity.Product", b =>
@@ -440,6 +545,55 @@ namespace AppleStore.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.HasOne("AppleStore.Entity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.FavoriteItem", b =>
+                {
+                    b.HasOne("AppleStore.Entity.Favorite", "Favorite")
+                        .WithMany("FavoriteItems")
+                        .HasForeignKey("FavoriteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppleStore.Entity.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Favorite");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.OrderItem", b =>
+                {
+                    b.HasOne("AppleStore.Entity.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppleStore.Entity.Product", "product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("product");
+                });
+
             modelBuilder.Entity("AppleStore.Entity.Product", b =>
                 {
                     b.HasOne("AppleStore.Entity.Category", "Category")
@@ -516,6 +670,16 @@ namespace AppleStore.Migrations
             modelBuilder.Entity("AppleStore.Entity.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.Navigation("FavoriteItems");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("AppleStore.Entity.Product", b =>

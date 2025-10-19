@@ -20,35 +20,34 @@ namespace AppleStore.Controllers
             _favoriteRepository = favoriteRepository;
             _userManager = userManager;
         }
-      [HttpPost]
-        public IActionResult Add(int productId)
+[HttpPost]
+public IActionResult Add(int productId)
+{
+    var userId = _userManager.GetUserId(User);
+    var favorite = _favoriteRepository.GetFavoriteByUserId(userId!);
+
+    if (favorite == null)
+    {
+        favorite = new Favorite
         {
-            var userId = _userManager.GetUserId(User);
-            var favorite = _favoriteRepository.GetFavoriteByUserId(userId!);
+            UserId = userId!,
+            PublishedOn = DateTime.Now,
+            FavoriteItems = new List<FavoriteItem>()
+        };
+        _favoriteRepository.AddOrder(favorite); 
+    }
 
-            if (favorite == null)
-            {
-                favorite = new Favorite
-                {
-                    UserId = userId,
-                    PublishedOn = DateTime.Now,
-                    FavoriteItems = new List<FavoriteItem>()
-                };
-                _favoriteRepository.AddOrder(favorite);
-            }
+    if (!favorite.FavoriteItems.Any(fi => fi.ProductId == productId))
+    {
+        favorite.FavoriteItems.Add(new FavoriteItem
+        {
+            ProductId = productId
+        });
+        _favoriteRepository.UpdateFavorite(favorite); 
+    }
 
-            if (!favorite.FavoriteItems.Any(fi => fi.ProductId == productId))
-            {
-                favorite.FavoriteItems.Add(new FavoriteItem
-                {
-                    ProductId = productId
-                });
-                _favoriteRepository.AddOrder(favorite);
-            }
-
-            return RedirectToAction("Index", "Home");
-        }
-            
+    return RedirectToAction("Index", "Home");
+}
 
         }
 }

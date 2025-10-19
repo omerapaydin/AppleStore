@@ -48,5 +48,10 @@ namespace AppleStore.Data.Concrete.EfCore
                 .ThenInclude(fi => fi.Product)
                 .FirstOrDefault(f => f.UserId == userId);
         }
+        public void UpdateFavorite(Favorite favorite)
+                    {
+                        _context.Favorites.Update(favorite);
+                        _context.SaveChanges();
+                    }
     }
 }

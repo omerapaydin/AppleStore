@@ -15,5 +15,6 @@ namespace AppleStore.Data.Abstract
         void DeleteFavorite(Favorite favorite);
         Favorite? GetFavoriteById(int id);
         Favorite? GetFavoriteByUserId(string userId);
+        void UpdateFavorite(Favorite favorite);
     }
 }

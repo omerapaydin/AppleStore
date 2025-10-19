@@ -5,7 +5,7 @@
 namespace AppleStore.Migrations
 {
     /// <inheritdoc />
-    public partial class TableNew3 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,14 +15,14 @@ namespace AppleStore.Migrations
                 keyColumn: "Id",
                 keyValue: "1",
                 columns: new[] { "ConcurrencyStamp", "PasswordHash", "SecurityStamp" },
-                values: new object[] { "99fced23-873b-4f9b-9a87-c3d800a6cc56", "AQAAAAIAAYagAAAAEJmVrMzr5SOMAoGkrYDV825Iw/wXqWPraaBpkbJigVZvZDeZY6xsa//aVcRdUocJpQ==", "6df286e2-faf4-4024-9222-34936a9ad2ec" });
+                values: new object[] { "7df7e3a4-edb1-46e1-8ea4-cab8fe032456", "AQAAAAIAAYagAAAAECgDJKgaW187QeIctozdPNlrx+3IKTFTWRiBhSPFJvIH7IFq5p+RK/AVGcGxqXizWg==", "8774d38d-9bec-46ff-b44a-c7ac9c3c097f" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "2",
                 columns: new[] { "ConcurrencyStamp", "PasswordHash", "SecurityStamp" },
-                values: new object[] { "3b4337c5-4b31-451a-a1c6-917962197711", "AQAAAAIAAYagAAAAEJX/prAksT5rn9dKPR8gmnY8yiMylUh9xWr1SJlEgH0AzMFvLAKBS//uVlZDBZBj3w==", "19db326a-e600-4bb7-b483-f91c4aff3c8a" });
+                values: new object[] { "d60e295d-f42e-4474-a75b-13697b293e58", "AQAAAAIAAYagAAAAEDHYZN5metFtPlzunUBEzaJmnvf/AYVVb+DbiBBkr36H9j+g8/2F67ZUmnVTU0xbnQ==", "aaac3fdf-15a8-4f3f-8e33-54ecc4534b46" });
         }
 
         /// <inheritdoc />
@@ -33,14 +33,14 @@ namespace AppleStore.Migrations
                 keyColumn: "Id",
                 keyValue: "1",
                 columns: new[] { "ConcurrencyStamp", "PasswordHash", "SecurityStamp" },
-                values: new object[] { "31c8796f-0a29-4a9f-99af-4d854ab44b1a", "AQAAAAIAAYagAAAAEGxD77fHIAZF2DXG8ehz99tBIEePE7+jwZPCB4eaBLSxtnYiRps1PZcbVTxSOAKwjA==", "cf9340ec-b638-436c-aa0c-97de7d5a777c" });
+                values: new object[] { "7602f40b-fc4a-4172-a68c-917545a84287", "AQAAAAIAAYagAAAAEAkBE4+6BmUrFxUsW7gBr62B6fLyD+hf3b1ai6ogYRDwTmv79HPgW9HdTh+queU/yQ==", "2d3b3b3a-25fb-4376-b6c5-224ced66a337" });
 
             migrationBuilder.UpdateData(
                 table: "AspNetUsers",
                 keyColumn: "Id",
                 keyValue: "2",
                 columns: new[] { "ConcurrencyStamp", "PasswordHash", "SecurityStamp" },
-                values: new object[] { "504a9033-0ef6-4880-9802-ac8293cff8a3", "AQAAAAIAAYagAAAAED4blqiebXMKCnNlrSOZcD+xyjyN5WfA84MSUx/SRgjcApud+s1qoR2WEkz7ebCFMg==", "30b042c6-d3e2-4395-baa7-a4f3af18c30c" });
+                values: new object[] { "f3a8c9e7-6d88-49c6-a2dd-a469a7148628", "AQAAAAIAAYagAAAAEOLDe28j8YreOSZ+pGgmqYilEhS7o8GfL6FFD++YDVggDGiIL5YqPns4zVjreflNug==", "15687614-2578-4de8-ab34-63daa43b2e0f" });
         }
     }
 }

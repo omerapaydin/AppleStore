@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppleStore.Migrations
 {
     [DbContext(typeof(IdentityContext))]
-    [Migration("20250924225548_TableNew4")]
-    partial class TableNew4
+    [Migration("20251019213752_InitFavorites1")]
+    partial class InitFavorites1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,15 +94,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "107706a5-bbfb-4ea0-8ff4-cb20f7f4b9ec",
+                            ConcurrencyStamp = "7602f40b-fc4a-4172-a68c-917545a84287",
                             Email = "info@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ömer Apaydın",
                             ImageFile = "p1.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEPoKZJmxXW0axlqGjgnPjVDuofU6FU/LLYjOH1Xrt2fDosJh++dfzQrZ54WvmZtqNg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAkBE4+6BmUrFxUsW7gBr62B6fLyD+hf3b1ai6ogYRDwTmv79HPgW9HdTh+queU/yQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2f60bd77-063d-49bc-b869-7835cc9c6151",
+                            SecurityStamp = "2d3b3b3a-25fb-4376-b6c5-224ced66a337",
                             TwoFactorEnabled = false,
                             UserName = "omerapaydin"
                         },
@@ -110,15 +110,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "94a6dd88-fd75-4faf-957a-e1a90a5f204f",
+                            ConcurrencyStamp = "f3a8c9e7-6d88-49c6-a2dd-a469a7148628",
                             Email = "info2@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ahmet Tamboğa",
                             ImageFile = "p2.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEEE9b6f/WOKgBaalitis4TuCuAVrt6V3D+Z01Vt9xtlwjeIU74axUbj2EcT8rm2IIA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOLDe28j8YreOSZ+pGgmqYilEhS7o8GfL6FFD++YDVggDGiIL5YqPns4zVjreflNug==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cb9d5b1b-e92b-4eb0-a074-562d5f3026aa",
+                            SecurityStamp = "15687614-2578-4de8-ab34-63daa43b2e0f",
                             TwoFactorEnabled = false,
                             UserName = "ahmettambuga"
                         });
@@ -180,6 +180,47 @@ namespace AppleStore.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.Property<int>("FavoriteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("PublishedOn")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("FavoriteId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Favorites");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.FavoriteItem", b =>
+                {
+                    b.Property<int>("FavoriteItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FavoriteId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FavoriteItemId");
+
+                    b.HasIndex("FavoriteId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("FavoriteItems");
                 });
 
             modelBuilder.Entity("AppleStore.Entity.Order", b =>
@@ -504,6 +545,36 @@ namespace AppleStore.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.HasOne("AppleStore.Entity.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.FavoriteItem", b =>
+                {
+                    b.HasOne("AppleStore.Entity.Favorite", "Favorite")
+                        .WithMany("FavoriteItems")
+                        .HasForeignKey("FavoriteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AppleStore.Entity.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Favorite");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("AppleStore.Entity.OrderItem", b =>
                 {
                     b.HasOne("AppleStore.Entity.Order", "Order")
@@ -599,6 +670,11 @@ namespace AppleStore.Migrations
             modelBuilder.Entity("AppleStore.Entity.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("AppleStore.Entity.Favorite", b =>
+                {
+                    b.Navigation("FavoriteItems");
                 });
 
             modelBuilder.Entity("AppleStore.Entity.Order", b =>

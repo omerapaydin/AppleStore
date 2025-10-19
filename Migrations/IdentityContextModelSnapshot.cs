@@ -91,15 +91,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "65e64d3a-50e6-4d86-bd6b-2f98f46bc5ab",
+                            ConcurrencyStamp = "7df7e3a4-edb1-46e1-8ea4-cab8fe032456",
                             Email = "info@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ömer Apaydın",
                             ImageFile = "p1.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAEA9bdgKkohnqDPx3/1Vrgho+6a6lpP4L4XM/djqOpHqXwawEzZjfo/N4uCUrm5C46Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECgDJKgaW187QeIctozdPNlrx+3IKTFTWRiBhSPFJvIH7IFq5p+RK/AVGcGxqXizWg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6347b9c8-53da-4a5d-bcfb-6e7f57dcd077",
+                            SecurityStamp = "8774d38d-9bec-46ff-b44a-c7ac9c3c097f",
                             TwoFactorEnabled = false,
                             UserName = "omerapaydin"
                         },
@@ -107,15 +107,15 @@ namespace AppleStore.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cf61a125-4836-4009-8d39-c15720a2e90c",
+                            ConcurrencyStamp = "d60e295d-f42e-4474-a75b-13697b293e58",
                             Email = "info2@gmail.com",
                             EmailConfirmed = true,
                             FullName = "Ahmet Tamboğa",
                             ImageFile = "p2.jpg",
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAIAAYagAAAAELSWts4OJRvfeobzb+V0Bsxh+9y7ijBw+/NoAAXaXfkPhLxRSPhm+t7Tw55TubS8DQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDHYZN5metFtPlzunUBEzaJmnvf/AYVVb+DbiBBkr36H9j+g8/2F67ZUmnVTU0xbnQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "452dac2a-5e98-4fb7-a4c6-9a802ce9f1b5",
+                            SecurityStamp = "aaac3fdf-15a8-4f3f-8e33-54ecc4534b46",
                             TwoFactorEnabled = false,
                             UserName = "ahmettambuga"
                         });
