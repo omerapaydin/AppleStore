@@ -13,7 +13,7 @@ namespace AppleStore.Data.Abstract
 
         void AddOrder(Favorite favorite);
         void DeleteFavorite(Favorite favorite);
-            Favorite? GetFavoriteById(int id);
+        Favorite? GetFavoriteById(int id);
         Favorite? GetFavoriteByUserId(string userId);
     }
 }
