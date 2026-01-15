@@ -12,5 +12,7 @@ namespace AppleStore.Entity
         public string? ImageFile { get; set; }
         public List<Product> Products { get; set; } = new List<Product>();
         public List<Comment> Comments { get; set; } = new List<Comment>();
+        public Favorite? Favorite { get; set; }
+
     }
 }

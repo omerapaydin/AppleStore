@@ -1,0 +1,20 @@
+@model ApplicationUser
+
+<p>@Model.FullName</p>
+
+@if (Model.Favorite != null && Model.Favorite.FavoriteItems.Any())
+{
+    <ul>
+        @foreach (var item in Model.Favorite.FavoriteItems)
+        {
+            <li>
+                <strong>@item.Product.Title</strong> <br />
+                Fiyat: @item.Product.Price ₺
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Favori ürün yok.</p>
+}

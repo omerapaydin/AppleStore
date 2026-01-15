@@ -7,7 +7,9 @@ using AppleStore.Models;
 using AppleStore.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.JSInterop.Infrastructure;
 
 namespace AppleStore.Controllers
 {
@@ -216,36 +218,47 @@ namespace AppleStore.Controllers
             var model = new ResetPasswordModel { Token = token };
             return View(model);
         }
-            
-             [HttpPost]
-            public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
+        {
+            if (ModelState.IsValid)
             {
-                if(ModelState.IsValid)
+                var user = await _userManager.FindByEmailAsync(model.Email!);
+
+                if (user == null)
                 {
-                    var user = await _userManager.FindByEmailAsync(model.Email!);
-
-                 if(user == null)
-                 {
-                     TempData["message"] = "Email adresiyle eşleşen kullanıcı yok.";
+                    TempData["message"] = "Email adresiyle eşleşen kullanıcı yok.";
                     return RedirectToAction("Login");
-                 }
+                }
 
-                    var result = await _userManager.ResetPasswordAsync(user,model.Token!,model.Password!);
+                var result = await _userManager.ResetPasswordAsync(user, model.Token!, model.Password!);
 
-                    if(result.Succeeded)
+                if (result.Succeeded)
 
-                    {
-                          TempData["message"] = "Şifre değiştirildi.";
-                        return RedirectToAction("Login");
-                        
-                    }
-
+                {
+                    TempData["message"] = "Şifre değiştirildi.";
+                    return RedirectToAction("Login");
 
                 }
-                return View(model);
+
 
             }
+            return View(model);
 
+        }
+
+
+      public async Task<IActionResult> Profile(string id)
+        {
+            var user = await _userManager.Users
+                .Include(u => u.Favorite)
+                    .ThenInclude(f => f.FavoriteItems)
+                        .ThenInclude(fi => fi.Product)
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            return View(user);
+        }
 
     }
 }
