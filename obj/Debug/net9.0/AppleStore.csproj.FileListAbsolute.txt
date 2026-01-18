@@ -164,4 +164,4 @@
 /Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/Iyzipay.dll
 /Users/omerapaydin/Desktop/apple.com/AppleStore/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/nnl36ahebo-uvl0dgyfhw.gz
-/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz
+/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz

@@ -106,7 +106,7 @@
   color: gold; /* Sarı */
 }
 
-.favorite-icon {
+/* .favorite-icon {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -120,4 +120,4 @@
 
 .favorite-icon:hover .checked {
   color: orange;
-}
+} */

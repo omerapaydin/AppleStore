@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qctPr+ZaMYQzx1TMMyoXI2fWY8HQEx5pWDNm2rxb6Ss=",
+  "Hash": "ZDV8mjk+O/BQquUhpGsH8Ll/mAiSXUYx/a7KWVQezXE=",
   "Source": "AppleStore",
   "BasePath": "_content/AppleStore",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/anasayfa.css"
     },
     {
-      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz",
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AppleStore",
-      "RelativePath": "css/main#[.{fingerprint=cmgurw1sr5}]?.css.gz",
+      "RelativePath": "css/main#[.{fingerprint=h9lio3ccwf}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "x4v9da5il6",
-      "Integrity": "4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw=",
+      "Fingerprint": "p51fhgh5ac",
+      "Integrity": "Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cmgurw1sr5",
-      "Integrity": "pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE=",
+      "Fingerprint": "h9lio3ccwf",
+      "Integrity": "2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/main.css"
@@ -206,6 +206,27 @@
       "OriginalItemSpec": "wwwroot/img/297629f8-5ac7-41c3-af25-e92ec686a74e.jpg"
     },
     {
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/3658e06e-81c3-4d4c-a163-65f43a6ecbab#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubtrfof2om",
+      "Integrity": "OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png"
+    },
+    {
       "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/3efb8662-4a3e-4636-a7a5-56e43702f799.jpg",
       "SourceId": "AppleStore",
       "SourceType": "Discovered",
@@ -225,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/3efb8662-4a3e-4636-a7a5-56e43702f799.jpg"
+    },
+    {
+      "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png",
+      "SourceId": "AppleStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/",
+      "BasePath": "_content/AppleStore",
+      "RelativePath": "img/79ae5ad7-aa55-4c3e-9567-12916a78523e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubtrfof2om",
+      "Integrity": "OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png"
     },
     {
       "Identity": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/7fdc087d-a7f1-4834-bb90-f4487759ca3c.jpg",
@@ -1564,13 +1606,13 @@
       ]
     },
     {
-      "Route": "css/main.cmgurw1sr5.css",
-      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz",
+      "Route": "css/main.css",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001364256480"
+          "Quality": "0.001356852103"
         }
       ],
       "ResponseHeaders": [
@@ -1580,19 +1622,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "732"
+          "Value": "736"
         },
         {
           "Name": "ETag",
-          "Value": "\"4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw=\""
+          "Value": "\"Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -1608,26 +1650,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE=\""
+          "Value": "W/\"2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "cmgurw1sr5"
-        },
-        {
-          "Name": "label",
-          "Value": "css/main.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE="
+          "Value": "sha256-2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E="
         }
       ]
     },
     {
-      "Route": "css/main.cmgurw1sr5.css",
+      "Route": "css/main.css",
       "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1637,7 +1671,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2063"
+          "Value": "2069"
         },
         {
           "Name": "Content-Type",
@@ -1645,11 +1679,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE=\""
+          "Value": "\"2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.css.gz",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.h9lio3ccwf.css",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001356852103"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "736"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h9lio3ccwf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.h9lio3ccwf.css",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2069"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1659,7 +1838,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cmgurw1sr5"
+          "Value": "h9lio3ccwf"
         },
         {
           "Name": "label",
@@ -1667,13 +1846,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE="
+          "Value": "sha256-2/9f69bTc9yj6OGt9Ds+WN7n/GpoeG5N7M7rhKtHm5E="
         }
       ]
     },
     {
-      "Route": "css/main.cmgurw1sr5.css.gz",
-      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz",
+      "Route": "css/main.h9lio3ccwf.css.gz",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-h9lio3ccwf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1682,7 +1861,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "732"
+          "Value": "736"
         },
         {
           "Name": "Content-Type",
@@ -1690,11 +1869,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw=\""
+          "Value": "\"Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
+          "Value": "Sun, 18 Jan 2026 14:14:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1712,7 +1891,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cmgurw1sr5"
+          "Value": "h9lio3ccwf"
         },
         {
           "Name": "label",
@@ -1720,144 +1899,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.css",
-      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001364256480"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "732"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.css",
-      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/css/main.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2063"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pDpr0dvJd3l0LtpkBa+PZvGa5XRu/RuPqYGDGmiUhZE="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.css.gz",
-      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/obj/Debug/net9.0/compressed/whz8bg7380-cmgurw1sr5.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "732"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 18 Jan 2026 13:58:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4WqHkHNA5VI3T0Jvtvg0Ax72rY/jC0NDWokh53XPGtw="
+          "Value": "sha256-Ywt2JCtpv6z7ZLhafKN7yDmLqY1bFL+DOwhfF1g7ci4="
         }
       ]
     },
@@ -1944,6 +1986,88 @@
       ]
     },
     {
+      "Route": "img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:18:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.ubtrfof2om.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:18:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubtrfof2om"
+        },
+        {
+          "Name": "label",
+          "Value": "img/3658e06e-81c3-4d4c-a163-65f43a6ecbab.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
       "Route": "img/3efb8662-4a3e-4636-a7a5-56e43702f799.b7dfskoipr.jpg",
       "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/3efb8662-4a3e-4636-a7a5-56e43702f799.jpg",
       "Selectors": [],
@@ -2022,6 +2146,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-aaOzSPVofV7cGlRvJwMLZUxCzdjdLeuWb7EEANsDvjI="
+        }
+      ]
+    },
+    {
+      "Route": "img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:18:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
+        }
+      ]
+    },
+    {
+      "Route": "img/79ae5ad7-aa55-4c3e-9567-12916a78523e.ubtrfof2om.png",
+      "AssetFile": "/Users/omerapaydin/Desktop/apple.com/AppleStore/wwwroot/img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1097570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 18 Jan 2026 14:18:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubtrfof2om"
+        },
+        {
+          "Name": "label",
+          "Value": "img/79ae5ad7-aa55-4c3e-9567-12916a78523e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OgxiMK/tYtwahVk1ey954Omtyh1J6lpLt/vJYvrMTyw="
         }
       ]
     },
