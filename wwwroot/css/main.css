@@ -10,7 +10,10 @@
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 25px;
-  transition: background 0.3s ease-in-out, transform 0.2s, color 0.3s;
+  transition:
+    background 0.3s ease-in-out,
+    transform 0.2s,
+    color 0.3s;
 }
 .btn.custom-btn:hover {
   background: #212529;
@@ -72,7 +75,10 @@
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 25px;
-  transition: background 0.3s ease-in-out, transform 0.2s, color 0.3s;
+  transition:
+    background 0.3s ease-in-out,
+    transform 0.2s,
+    color 0.3s;
 }
 
 .custom-page-btn:hover {
@@ -87,6 +93,19 @@
   border: 1px solid #212529 !important;
 }
 /* ------ */
+
+.favorite-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc; /* Gri */
+}
+
+.favorite-icon.active {
+  color: gold; /* Sarı */
+}
+
 .favorite-icon {
   position: absolute;
   top: 2px;

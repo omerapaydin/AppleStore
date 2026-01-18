@@ -27,17 +27,19 @@
        <div class="row">
          @foreach(var prd in Model.Products)
         {
+
+           bool isFavorited = Model.FavoriteProductIds.Contains(prd.ProductId);
             <div class="col-md-3 mb-3">
                     <div class="card shadow product-card">
                     <a href="/Home/Details/@prd.ProductId">
 
-                    <form asp-controller="Favorite" asp-action="Add" method="post" >
-                      <input type="hidden" name="productId" value="@prd.ProductId" />
-                      <button type="submit" class="favorite-icon">
-                          <i class="fa fa-star"></i>
-                      </button>
+            <form asp-controller="Favorite" asp-action="Add" method="post">
+                <input type="hidden" name="productId" value="@prd.ProductId" />
 
-                  </form>
+                <button type="submit" class="favorite-icon @(isFavorited ? "active" : "")">
+                    <i class="fa fa-star"></i>
+                </button>
+            </form>
 
 
                        <img src="~/img/@prd.Image" class="card-img-top" alt="Kulaklık" />

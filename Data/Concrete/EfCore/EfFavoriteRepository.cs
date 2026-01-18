@@ -53,5 +53,11 @@ namespace AppleStore.Data.Concrete.EfCore
                         _context.Favorites.Update(favorite);
                         _context.SaveChanges();
                     }
+
+           public void RemoveFavoriteItem(FavoriteItem item)
+            {
+                _context.FavoriteItems.Remove(item);
+                _context.SaveChanges();
+            }
     }
 }

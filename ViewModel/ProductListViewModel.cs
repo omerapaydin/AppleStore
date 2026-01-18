@@ -11,6 +11,8 @@ namespace AppleStore.ViewModel
         public List<Product>? Products { get; set; }
         public List<Category>? Categories { get; set; }
         public PageInfo PageInfo { get; set; } = new();
+            public List<int> FavoriteProductIds { get; set; } = new();
+
     }
          public class PageInfo
     {
